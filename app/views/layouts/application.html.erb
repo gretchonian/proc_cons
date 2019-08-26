@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ProcCons</title>
+    <!-- <title>Hidden Message</title> -->
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,12 @@
   </head>
 
   <body>
+      <nav class="navbar sticky-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Sticky top</a>
+      </nav>
+      <nav class="navbar fixed-bottom navbar-light bg-light">
+       <a class="navbar-brand" href="#">Fixed bottom</a>
+      </nav>
     <%= yield %>
   </body>
 </html>
