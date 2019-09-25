@@ -1,14 +1,5 @@
 @import "bootstrap";
 
-.mainpicture {
-  background: image_url('mainpic.jpg')no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 90vh;
-}
-
 .box {
   background: rgba(0, 0, 0, 0.5);
   margin-top: 10px;
@@ -21,6 +12,35 @@
   color: black;
 }
 
+.circle {
+    font-weight: bold;
+    font-style: italic;
+    position: relative;
+    border-radius: 100%;
+    background: #f84342;
+    border: 1px solid #F7F7F7;
+    width: 80px;
+    height: 80px;
+    margin: 10px 10px;
+    text-align: center;
+    color: #FFF;
+    font-size: 10px;
+    line-height: 16px;
+    cursor: pointer;
+    transform: rotate(11deg);
+    -ms-transform: rotate(11deg); /* IE 9 */
+    -webkit-transform: rotate(11deg); /* Opera, Chrome, and Safari */
+    }
+
 .footer {
   font: 15px;
+}
+
+.mainpicture {
+  background: image_url('mainpic.jpg')no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 90vh;
 }
