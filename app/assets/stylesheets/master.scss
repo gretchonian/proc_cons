@@ -14,11 +14,11 @@
 
 .circle {
     font-weight: bold;
-    font-style: italic;
+    /*font-style: italic;*/
     position: relative;
     border-radius: 100%;
-    background: #f84342;
-    border: 1px solid #F7F7F7;
+    background: #808080;
+    border: 5px solid #F7F7F7;
     width: 80px;
     height: 80px;
     margin: 10px 10px;
@@ -27,9 +27,9 @@
     font-size: 10px;
     line-height: 16px;
     cursor: pointer;
-    transform: rotate(11deg);
-    -ms-transform: rotate(11deg); /* IE 9 */
-    -webkit-transform: rotate(11deg); /* Opera, Chrome, and Safari */
+   /* transform: rotate(11deg);
+    -ms-transform: rotate(11deg); *//* IE 9 */
+    /*-webkit-transform: rotate(11deg);*/ /* Opera, Chrome, and Safari */
     }
 
 .footer {
