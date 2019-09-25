@@ -1,10 +1,10 @@
 class PrimaryController < ApplicationController
 
   def index
-    
+
   end
 
-  def aboutus
+  def about
 
   end
 
