@@ -12,27 +12,29 @@
 
   <body>
     <nav class="navbar sticky-top navbar-dark bg-dark">
-      <div class="row col-sm-2">
-        <div class="circle">
-          <br/>
-          <%= link_to 'PEC', root_path, class: "navbar-brand" %>
-        </div>
-      </div>
-      <br/>
-      <div class="row col-sm-2 offset-1">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <%= link_to 'HOME', root_path, class: "nav-item nav-link active" %>
-            <%= link_to 'ABOUT US', about_path, class: "nav-item nav-link" %>
-            <%= link_to 'CONTACT', contact_path, class: "nav-item nav-link" %>
-            <%= link_to 'LOGIN', root_path, class: "nav-item nav-link disabled"%>
-          <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">LOGIN</a> -->
+      <!-- <div class="container"> -->
+        <div class="col-sm-2">
+          <div class="circle">
+            <br/>
+            <%= link_to 'PEC', root_path, class: "navbar-brand" %>
           </div>
         </div>
-      </div>
+        <br/>
+        <div class="col-sm-2">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <%= link_to 'HOME', root_path, class: "nav-item nav-link active" %>
+              <%= link_to 'ABOUT US', about_path, class: "nav-item nav-link" %>
+              <%= link_to 'CONTACT', contact_path, class: "nav-item nav-link" %>
+              <%= link_to 'LOGIN', root_path, class: "nav-item nav-link disabled"%>
+          <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">LOGIN</a> -->
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
     </nav>
     <nav class="navbar fixed-bottom navbar-light bg-light">
       <span class="footer navbar-text">Copyright 2019, Process Engineering Consultants, LLC, Southern Oregon</span>
