@@ -8,8 +8,8 @@ class PrimaryController < ApplicationController
 
   end
 
-  def contact
-    # @contact = contact.new(first_name:"",last_name:"",email:"")
+  def contactus
+
   end
 
 end
