@@ -2,8 +2,10 @@
 <html>
   <head>
     <%= display_meta_tags site: 'PEC' %>
-    <%= set_meta_tags  description: 'Process Engineering Consultants, LLC',
-                      keywords: 'Process Engineering, Chemical Engineering, Engineering Consultant, Chemical Engineer, Process Engineer' %>
+    <% set_meta_tags   description: 'Process Engineering Consultants, LLC',
+                        keywords: 'Process Engineering, Chemical Engineering, Engineering Consultant, Chemical Engineer, Process Engineer' %>
+    <meta name = "description" content = "Process Engineering Consultants, LLC" keywords = "Process Engineering, Chemical Engineering, Engineering Consultant, Chemical Engineer, Process Engineer"/>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
