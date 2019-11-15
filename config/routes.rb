@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   root 'primary#index'
   get 'about', to: 'primary#about'
   get 'contactus', to: 'primary#contactus'
+  resources :contact, only: [:new, :create]
   
 end

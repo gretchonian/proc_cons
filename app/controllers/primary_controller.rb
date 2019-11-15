@@ -9,7 +9,7 @@ class PrimaryController < ApplicationController
   end
 
   def contactus
-
+    
   end
 
 end
