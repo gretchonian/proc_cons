@@ -5,12 +5,22 @@
       <br/>
       <h1><%= title 'Contact Us'%></h1>
       <br/>
+      <div clear:both></div>
       <div class="col-sm-10 offset-sm-1">
-        <%= simple_form_for @contact do |f| %>
-          <%= f.error_notification %>
-          <%= f.input :company_name %>
+        <%= simple_form_for @contact do |f| %> 
+          <div class="row">
+            <div class="col-6">
+              <%= f.error_notification %>
+              <%= f.input :company_name, placeholder: "Company, Co." %>
+              <%= f.input :address, placeholder: "123 Main St, Anywhere, OR 97000"%>
+              <%= f.input :phone_number, placeholder: "541-555-5555" %>
+            </div>
+            <div class="col-6">
+              <%= f.input :email, placeholder: "contact@company.com" %>
+              <%= f.input :project_details, placeholder: "Project summary, budget, and timeline", class: "larger_box" %>
+            </div>
+          </div>
         <%end%>
-      
       </div>        
     </div>
     <br/>
