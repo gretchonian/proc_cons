@@ -1,0 +1,18 @@
+<div class="mainpicture">
+<br/>
+  <div class="box col-8 offset-2 text-center">
+    <div class="container">
+      <br/>
+      <h1><%= title 'Contact Us'%></h1>
+      <br/>
+      <div class="col-sm-10 offset-sm-1">
+        <%= simple_form_for @contact do |f| %>
+          <%= f.error_notification %>
+          <%= f.input :company_name %>
+        <%end%>
+      
+      </div>        
+    </div>
+    <br/>
+  </div>
+</div>
