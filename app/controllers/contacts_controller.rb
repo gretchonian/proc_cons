@@ -4,11 +4,16 @@ class ContactsController < ApplicationController
   end
 
   def create
-    @contact.create(contact_params)
+    @contact = Contact.create(contact_params)
+    if @contact.valid?
+      redirect_to root_path
+    else
+      render :new, status: :unprocessable_entity
+    end
   end
 
   private
   def contact_params
-    contact_params(require).permit(:company_name, :address, :phone_number, :email, :project_details)
+    params.require(:contact).permit(:company_name, :address, :phone_number, :email, :project_details)
   end
 end

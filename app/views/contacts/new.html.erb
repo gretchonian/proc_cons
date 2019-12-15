@@ -5,7 +5,6 @@
       <br/>
       <h1><%= title 'Contact Us'%></h1>
       <br/>
-      <div clear:both></div>
       <div class="col-sm-10 offset-sm-1">
         <%= simple_form_for @contact do |f| %> 
           <div class="row">
@@ -19,6 +18,10 @@
               <%= f.input :email, placeholder: "contact@company.com" %>
               <%= f.input :project_details, placeholder: "Project summary, budget, and timeline", class: "larger_box" %>
             </div>
+          </div>
+          <br/>
+          <div class="text-center">
+            <%= f.submit 'Submit', class: 'btn btn-light' %>
           </div>
         <%end%>
       </div>        
