@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   root 'primary#index'
   get 'about', to: 'primary#about'
   get 'contactus', to: 'primary#contactus'
-  resources :contacts, only: [:new, :create, :update, :show]
+  resources :contacts, only: [:new, :create, :update]
 end
