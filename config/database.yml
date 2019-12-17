@@ -84,5 +84,5 @@ development:
 production:
   <<: *default
   database: proc_cons_production
-  username: proc_cons
-  password: <%= ENV['PROC_CONS_DATABASE_PASSWORD'] %>
+  # username: proc_cons
+  # password: <%= ENV['PROC_CONS_DATABASE_PASSWORD'] %>

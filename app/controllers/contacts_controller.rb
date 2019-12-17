@@ -6,7 +6,7 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.create(contact_params)
     if @contact.valid?
-      redirect_to root_path
+      redirect_to thankyou_path
     else
       render :new, status: :unprocessable_entity
     end
